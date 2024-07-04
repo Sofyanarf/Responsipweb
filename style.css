@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+header{
+    background: orangered;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+h1{
+    margin: 0;
+}
+nav{
+    background:white;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, .1);
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    color: turquoise;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;    
+}
+nav ul li a:hover, 
+nav ul li a.active{
+    background-color: brown;
+}
+.container{
+    max-width: 960px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+.Havenbook{
+    text-align: center;
+}
+.Havenbook h2{
+    color: #333;
+}
+.Havenbook p{
+    color: #666;
+}
+.buku{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-bottom: 20px;
+}
+.-kartu-buku{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid orangered ;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    transition: transform 0.3s ease;
+}
+.kartu-buku:hover{
+    transform: scale(1.1);
+}
+
+.buku-img{
+    width: 250px;
+    margin: 0 auto 10px;
+}
+.buku-img img{
+    width: 200px;
+    height: 200px;
+    padding-left: 35px;
+}
+.pinjam-buku{
+    text-align: center;
+    flex-grow: 1;
+}
+.judul{
+    font-size: 1.2rem;
+    color: #333;
+}
+.detail{
+    color: #777;
+}
+.tekan{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+}
+.klik{
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 5px auto;
+    background-color:brown;
+    color:turquoise;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.klik:hover{
+    color: white;
+}
+
+footer{
+    background:rgb(7, 7, 145);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.kontak {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.kontak h2 {
+    color: #333;
+}
+
+.kontak .nomor {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .kontak {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .buku {
+        flex-direction: column; 
+    }
+    .kartu-buku {
+        width: 100%;
+    }
+}
